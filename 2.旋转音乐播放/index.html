@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Rotate Music Player</title>
-	<script type="text/javascript" src="MOBI_JS_LIB/a.js"></script>
+	<script type="text/javascript" src="../MOBI_JS_LIB/a.js"></script>
 	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 	<meta name="screen-orientation" content="portrait">
 	<meta name="x5-orientation" content="portrait">
@@ -12,10 +12,18 @@
 	<!--CSS部分-->
 	<style type="text/css">
 		body {
-			background-color: black;
 			overflow: hidden;
 		}
-
+		html {
+			font-size: 50px;
+			-ms-touch-action: none;
+			background-color: black;
+		}
+		* {
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		
 		#audio_btn {
 			height: 0.6rem;
 			width: 0.6rem;
@@ -46,7 +54,7 @@
 	</style>
 </head>
 <body>
-	<div id="audio_btn" class="rotate"><!--添加rotate后自动播放-->
+	<div id="audio_btn" class="rotate"><!--添加rotate class后自动播放-->
 		<audio loop src="bgm.mp3" id="media" autoplay preload="auto"></audio>
 	</div>
 
