@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移动端框架</title>
+	<script type="text/javascript" src="../../0.MOBI_JS_LIB/a.js"></script>
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="renderer" content="webkit" />
+	<meta name="x5-page-mode" content="app" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+</head>
+<body>
+	<div class="background" style="background-color: black"><!--删除背景色-->
+		<div id="wrapper">	
+			<div id="scroller">
+				<p style="color: grey; font-size: 0.5rem;">横向拖动该页面，此页面带bounce back特效。横向拖动该页面，此页面带bounce back特效。</p>
+			</div>
+		</div>
+		<!--iScroll Configuration-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+			loaded();
+			var myScroll;
+			function loaded () {
+			    myScroll = new IScroll('#wrapper', {bounce:true, scrollX: true, scrollY: false, tap: true}); //横向移动, 带bounce back
+
+			}
+			document.addEventListener('touchmove', function (e) {e.preventDefault(); }, isPassive() ? {
+			    capture: false,
+			    passive: false
+			} : false);
+			});
+		</script>
+		<script type="text/javascript" src="../../0.MOBI_JS_LIB/iscroll.js"></script>
+    	<script type="text/javascript" src="../../0.MOBI_JS_LIB/demoUtils.js"></script>	
+    	<!--iScroll END-->
+
+		<script src="http://mjs.sinaimg.cn/wap/online/public/share/shareWx_main.js"></script>
+		<script type="text/javascript">
+			var _wxShareConfig = {
+            title: '移动端框架', // 分享标题
+            desc: '“框架”', // 分享描述
+            type: '', // 分享类型,music、video或link，不填默认为link
+            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+        }
+	    </script>
+	    
+    </div>			
+</body>
+</html>

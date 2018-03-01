@@ -26,6 +26,7 @@ html {
 	/*border-style: solid;*/
 }
 
+
 #wrapper {
 	position: absolute;
 	z-index: 1;
@@ -35,7 +36,7 @@ html {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background: #fff;
+	background: black;
 	overflow: hidden;
 }
 
@@ -45,7 +46,7 @@ html {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	width: 23.4rem;
 	height: 100%;
-	background-color: #fff;
+	background-color: black;
 	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
 	-webkit-touch-callout: none;
@@ -59,3 +60,6 @@ html {
 	-o-text-size-adjust: none;
 	text-size-adjust: none;
 }
+
+
+
