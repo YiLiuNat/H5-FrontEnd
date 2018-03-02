@@ -57,7 +57,7 @@
 
 <body>
 	<div id="audio_btn" class="rotate"><!--添加rotate class后自动播放-->
-		<audio loop src="bgm.mp3" id="media" preload="auto"></audio>
+		<audio loop src="bgm.mp3" id="media" autoplay preload="auto"></audio>
 	</div>
 
 	<!--旋转音乐播放JS部分，给音乐按钮增加rotate class，在css中设置rotate class为旋转动画-->
@@ -78,7 +78,7 @@
 		});
 		//微信端自动播放音乐
 		document.addEventListener("WeixinJSBridgeReady", function (){
-		    mCar.play();
+		    x.play();
 		}, false);
 	</script>
 </body>
