@@ -74,7 +74,7 @@
 
 		//移动端浏览器不支持自动播放，手指触屏任意地方后自动播放
 		$('html').one("touchstart",function(){
-		    x.play();
+		    $("#audio_btn").hasClass("rotate");
 		});
 		//微信端自动播放音乐
 		document.addEventListener("WeixinJSBridgeReady", function (){
